@@ -1,0 +1,188 @@
+.header{
+height: 55px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+background-color: white;
+border-bottom-width:1px ;
+border-bottom-style:solid ;
+border-bottom-color:rgb(238, 235, 235);
+z-index: 100;
+
+}
+.left-section{
+    margin-top: 0%;
+     display: flex;
+    align-items: center;
+}
+.middle-section{
+    display: flex;
+     
+    flex: 1;
+    margin-right: 0%;
+    max-width: 600px;
+    align-items: center;
+}
+
+.right-section{
+    display: flex;
+    width: 200px;
+  margin-left: 0%;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    flex-shrink: 0;
+    
+    
+
+   
+}
+.hamburger-menu{
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 20px;
+   
+}
+.utube-logo{
+
+    height: 30px;
+
+}
+.utube{
+display: inline-block;
+font-family: Roboto, Arial;
+font-size: 20px;
+font-style: bold;
+margin-top: 0%;
+padding-top: 0%;
+}
+.search-icon{
+position: relative;
+height: 39px;
+width: 65px;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(172, 164, 164);
+border-radius: 2px;
+box-shadow: inset 1px 2px 5px rgba(112, 111, 111, 0.15);
+margin-right: 10px;
+margin-left: -1px;
+  }
+  .search-icon,
+  .voice-button,
+  .upload-icon-container,
+  .menu-container,
+  .notification,
+  .profile-container{
+display: flex;
+justify-content: center;
+position:  relative;
+align-items: center;
+
+
+  }
+.search-icon .tooltip,
+.voice-button .tooltip,
+.upload-icon-container .tooltip,
+.menu-container .tooltip,
+.notification .tooltip,
+.profile-container .tooltip{
+    font-family: Roboto, Arial;
+position: absolute;
+display: flex;
+background-color: rgb(156, 153, 153);
+padding-top: 4px;
+padding-left: 8px;
+padding-right: 8px;
+padding-bottom: 4px;
+border-radius: 2px;
+font-size: 12px;
+bottom: -30px;
+opacity: 0;  
+transform: opacity 0.15s;
+pointer-events:none ;
+white-space: nowrap;
+}
+.search-icon:hover .tooltip,
+    .voice-button:hover .tooltip,
+    .upload-icon-container:hover .tooltip,
+    .menu-container:hover .tooltip,
+    .notification:hover .tooltip,
+    .profile-container:hover .tooltip{
+    opacity: 1;
+}
+
+
+.voice-button{
+    height:40px;
+    width: 40px;
+    border: none;
+    background-color:rgb(250, 248, 248);
+    border-radius: 20px;
+
+}
+.mic{
+    height: 30px;
+    margin-top: 4px;
+  
+}
+.search-bar{
+  flex: 1;
+ width: 0;
+  height: 36px;
+  font-size: 16px;
+  border: 1px solid  rgb(172, 164, 164) ;
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0 ,0, 0.15);
+    }
+    .search-bar::placeholder{
+
+        font-family: Roboto, Arial;
+        font-size: 16px;
+        font-weight: 10;
+        padding-left: 10px;
+    }
+
+    .upload{
+        height: 50px;
+        width: 25px;
+  
+    }
+    .menu{
+        height: 50px;
+        width: 25px;
+  
+    }
+    .bell{
+        height: 50px;
+        width: 25px;
+      
+    }
+    .profile{
+        height: 50px;
+        width: 25px;
+  
+    }
+    .notification{
+
+        position: relative;
+    }
+    .notification-count{
+        position: absolute;
+        top: 6px;
+        right: -5px;
+        background-color: red;
+        color: white;
+        font-family: Roboto,Arial;
+        font-size: 11px;
+       padding-left: 5px;
+       padding-right: 5px;
+       padding-bottom: 2px;
+       padding-top: 2px;
+       border-radius: 10px;
+       
+    }

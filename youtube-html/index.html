@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <title>YouTube Clone</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+<link rel="stylesheet" href="/youtube.css/video.css">
+<link rel="stylesheet" href="/youtube.css/general.css">
+<link rel="stylesheet" href="/youtube.css/header.css">
+<link rel="stylesheet" href="/youtube.css/sidebar.css">
+    </head>
+    
+    <body>
+        <header class="header"> 
+            <div class="left-section">
+                <img class="hamburger-menu" src="/icons/hamburger.png">
+                <img class="utube-logo" src="/icons/youtube.png">
+               <div class="utube">YouTube</div> 
+            </div>
+            <div class="middle-section">
+                <input class="search-bar" type="text" placeholder="Search">
+                <button class="search-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+                  <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-button">
+                    <svg class="mic" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-mic-fill" viewBox="0 0 16 16">
+                        <path d="M5 3a3 3 0 0 1 6 0v5a3 3 0 0 1-6 0z"/>
+                        <path d="M3.5 6.5A.5.5 0 0 1 4 7v1a4 4 0 0 0 8 0V7a.5.5 0 0 1 1 0v1a5 5 0 0 1-4.5 4.975V15h3a.5.5 0 0 1 0 1h-7a.5.5 0 0 1 0-1h3v-2.025A5 5 0 0 1 3 8V7a.5.5 0 0 1 .5-.5"/>
+                      </svg>
+                      <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                <svg class="upload" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-camera-video" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M0 5a2 2 0 0 1 2-2h7.5a2 2 0 0 1 1.983 1.738l3.11-1.382A1 1 0 0 1 16 4.269v7.462a1 1 0 0 1-1.406.913l-3.111-1.382A2 2 0 0 1 9.5 13H2a2 2 0 0 1-2-2zm11.5 5.175 3.5 1.556V4.269l-3.5 1.556zM2 4a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h7.5a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1z"/>
+                  </svg>
+                  <div class="tooltip">Upload</div>
+                </div>
+                <div class="menu-container">
+                  <svg class="menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-down" viewBox="0 0 16 16">
+                    <path d="M7.646.146a.5.5 0 0 1 .708 0L10.207 2H14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h3.793zM1 7v3h14V7zm14-1V4a1 1 0 0 0-1-1h-3.793a1 1 0 0 1-.707-.293L8 1.207l-1.5 1.5A1 1 0 0 1 5.793 3H2a1 1 0 0 0-1 1v2zm0 5H1v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 4.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5m0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5"/>
+                  </svg>
+                  <div class="tooltip">Create</div>
+                </div>
+                
+        
+                  <div class="notification">
+                  <svg class="bell" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"/>
+                  </svg>
+                  <div class="tooltip">Notifications</div>
+                  <div class="notification-count">3</div>
+
+                
+                </div>
+                <div class="profile-container">
+                  <svg class="profile" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                  <div class="tooltip">Profle</div>
+                </div>
+                
+
+            </div>
+           
+        </header>
+     <nav class="sidebar">
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
+                <path d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5"/>
+              </svg> 
+              <div>Home</div>     
+
+        </div>
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-compass" viewBox="0 0 16 16">
+                <path d="M8 16.016a7.5 7.5 0 0 0 1.962-14.74A1 1 0 0 0 9 0H7a1 1 0 0 0-.962 1.276A7.5 7.5 0 0 0 8 16.016m6.5-7.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0"/>
+                <path d="m6.94 7.44 4.95-2.83-2.83 4.95-4.949 2.83 2.828-4.95z"/>
+              </svg>
+              <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play" viewBox="0 0 16 16">
+                <path d="M2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1m2.765 5.576A.5.5 0 0 0 6 7v5a.5.5 0 0 0 .765.424l4-2.5a.5.5 0 0 0 0-.848z"/>
+                <path d="M1.5 14.5A1.5 1.5 0 0 1 0 13V6a1.5 1.5 0 0 1 1.5-1.5h13A1.5 1.5 0 0 1 16 6v7a1.5 1.5 0 0 1-1.5 1.5zm13-1a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-.5-.5h-13A.5.5 0 0 0 1 6v7a.5.5 0 0 0 .5.5z"/>
+              </svg>
+              <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn" viewBox="0 0 16 16">
+                <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z"/>
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+              </svg>
+              <div>Originals</div>
+              
+        </div>
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-vinyl" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                <path d="M8 6a2 2 0 1 0 0 4 2 2 0 0 0 0-4M4 8a4 4 0 1 1 8 0 4 4 0 0 1-8 0"/>
+                <path d="M9 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/>
+              </svg>
+              <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection" viewBox="0 0 16 16">
+                <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5z"/>
+              </svg>
+              <div>Library</div>
+
+        </div>
+    </nav>   
+        
+        <main>
+        <section class="video-grid">
+        <div class="video-preview">
+            <div class="thumbnail-row">
+               
+                <img class="thumbnail" src="/images/img1.webp">
+                <div class="video-time">14:13</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo1.jpg">
+            </div>
+           <div class="video-info">
+       
+                <p class="video-title">
+                    Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="name">
+                    Marques Browniee &#10003;
+                </p>
+                <p class="video-stats">
+                    3.4M views &#183; 6 months ago
+                </p>
+            </div>
+           
+           </div>
+        </div>
+           <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/images/img2.webp">
+                <div class="video-time">3:16</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo2.jpg">
+            </div>
+           <div class="video-info">
+          
+                <p class="video-title">
+                    Kartam Bhugtam - Title Track (Kannada) | Shreyas Talpade, Vijay Raaz | Shabbir Ahmed
+                </p>
+                <p class="name">
+                    Zee Music South &#10003;
+                </p>
+                <p class="video-stats">
+                    1K views &#183; 23 hours ago
+                </p>
+            </div>
+           
+           </div>
+         </div>
+       
+         <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/images/img3.webp">
+                <div class="video-time">5:10</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo3.jpg">
+            </div>
+           <div class="video-info">
+          
+                <p class="video-title">
+                    Maharaj Trailer | Now Streaming on Netflix | Junaid Khan, Jaideep Ahlawat, Shalini Pandey, Sharvari
+                </p>
+                <p class="name">
+                    YRF &#10003;
+                </p>
+                <p class="video-stats">
+                    839K views &#183; 5 days ago
+                </p>
+            </div>
+           
+           </div>
+         </div>
+       
+        
+         <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/images/img4.webp">
+                <div class="video-time">20:13</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo4.jpg">
+            </div>
+           <div class="video-info">
+        
+                <p class="video-title">
+                    Minmini - Video Song | Sweet Kaaram Coffee | Lakshmi | Madhoo | Santhy | Govind Vasantha
+                </p>
+                <p class="name">
+                    Think Music India &#10003;
+                </p>
+                <p class="video-stats">
+                    8.4Kviews &#183; 3 days ago
+                </p>
+            </div>
+           
+           </div>
+         </div>
+
+         
+         <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/images/img6.webp">
+                <div class="video-time">18:13</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo5.jpg">
+            </div>
+           <div class="video-info">
+           
+                <p class="video-title">
+                    Sancharam | By Santhosh George Kulangara | Himachal Pradesh 03 | Safari TV
+                </p>
+                <p class="name">
+                    Safari &#10003;
+                </p>
+                <p class="video-stats">
+                    48K views &#183; 7 months ago
+                </p>
+            </div>
+           
+           </div>
+         </div>
+
+          
+         <div class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="/images/img5s.webp">
+                <div class="video-time">4:13</div>
+            </div>
+            <div class="video-info-grid">
+            <div class="logo">
+                <img class= "logo-img" src="/images/logo6.jpg">
+            </div>
+           <div class="video-info">
+            
+                <p class="video-title">
+                    Swagatham Lalthanmawia | KBFC | Kerala Blasters | Lalthanmawia - 2027
+                </p>
+                <p class="name">
+                    Kerala Blasters &#10003;
+                </p>
+                <p class="video-stats">
+                    13K views &#183; 2 months ago
+                </p>
+            </div>
+           
+           </div>
+         </div>
+       
+        </section>
+    </main>
+    </body>
+</html>
